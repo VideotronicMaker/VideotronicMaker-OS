@@ -2,7 +2,7 @@
   <img src="vtm_avatar.webp" alt="VTM OS Logo" width="200" height="auto" />
   <h1>VTM OS™ Platform</h1>
   <p>
-    <b>The Proprietary Bio-Mimetic AI Architecture</b>
+    <b>The Proprietary Bio-Mimetic AI Architecture </b>
   </p>
 
   <img src="https://img.shields.io/badge/Status-Commercial_Release_Candidate-red?style=for-the-badge" alt="Project Status" />
