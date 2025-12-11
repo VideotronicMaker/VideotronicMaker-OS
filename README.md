@@ -2,7 +2,7 @@
   <img src="vtm_avatar.webp" alt="VTM OS Logo" width="200" height="auto" />
   <h1>VTM OS™ Platform</h1>
   <p>
-    <b>The Proprietary "Dual-Brain" Physical AI Architecture</b>
+    <b>The Proprietary Bio-Mimetic AI Architecture</b>
   </p>
 
   <img src="https://img.shields.io/badge/Status-Commercial_Release_Candidate-red?style=for-the-badge" alt="Project Status" />
@@ -24,18 +24,18 @@ The **VTM OS™ Platform** (formerly VideotronicMaker) has evolved from an open 
 
 This repository now serves as the public landing page for the commercial platform.
 
-## 🧠 System Architecture Overview
+## 🧠 System Architecture: VTM Bio-Mimetic™
 
-VTM OS™ is a "Dual-Brain" Operating System designed to transform **any host architecture** into a lifelike, physically embodied AI. It separates high-level reasoning (The Host) from real-time physical control (The Body).
+The VTM OS™ is built on a proprietary **Bio-Mimetic Architecture** that decouples high-level reasoning from real-time physical control, mimicking a biological nervous system.
 
 ### 1. The Host Platform (The Mind)
 * **VTM Personality Core™:** A proprietary, secured local host that manages complex reasoning, LLM API bridging (BYOK Architecture), and system telemetry.
-* **Compatibility:** Fully hardware-agnostic (PC, Mac, Linux, Mobile).
+* **Function:** Handles higher-level cognition and "Thought Processing."
 
 ### 2. The BioLink Interface (The Body)
 * **VTM-BioLink Protocol™:** A proprietary, high-speed telemetry standard that replaces legacy serial communication.
 * **Bio-Mimetic Kinetics:** Translates AI intent into organic, fluid motion rather than robotic actuation.
-* **Universal MCU Support:** Works with any microcontroller capable of the BioLink handshake.
+* **Function:** Handles "Reflex Actions" and real-time motor control.
 
 ---
 
