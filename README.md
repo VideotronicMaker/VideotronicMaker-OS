@@ -12,7 +12,7 @@
   <br /><br />
 
   <p>
-    <i>"Evolution is not just software. It is the bridge between the digital mind and the physical world."</i>
+    <i>"Sustained, disciplined learning, fueled by natural gravitation, accumulates into the capacity for creation."</i>
   </p>
 </div>
 
@@ -21,21 +21,24 @@
 # VTM OS™ Platform
 
 **Status:** Proprietary Development / Closed Beta
-**Architect:** VTM Systems
+**Producer:** VideotronicMaker
 
 ---
 
-## ⚠️ Commercial Pivot Notice
+## ⚠️ Commercial Release Notice
 
-The **VTM OS™ Platform** (formerly VideotronicMaker) has transitioned from an open research initiative into a proprietary commercial architecture. This repository now serves as the public documentation hub for the closed-source platform.
+The **VTM OS™ Platform** is a new proprietary commercial architecture produced by **VideotronicMaker**. This repository serves as the public documentation hub for the closed-source platform.
 
-**Note:** Legacy open-source experiments have been archived to support this transition.
+**Note:** Technical documentation for this specific commercial release is hosted here. Educational tutorials and open-source community projects continue separately.
 
 ---
 
 ## 🧠 System Architecture: VTM Bio-Mimetic™
 
 The VTM OS™ is built on a proprietary **Bio-Mimetic Architecture** that decouples high-level reasoning from real-time physical control, mimicking a biological nervous system.
+
+### 📚 Architecture Documentation
+* **[Flagship: Arduino Uno Q Architecture](docs/Arduino_Uno_Q/architecture.md)** (Integrated Model)
 
 ### 1. The Host Platform ("The Mind")
 * **Core:** VTM Personality Core™
@@ -52,8 +55,8 @@ The VTM OS™ is built on a proprietary **Bio-Mimetic Architecture** that decoup
 The source code for VTM OS™ is **Closed Source / Proprietary**.
 
 * **Public Release:** To Be Announced (TBA)
-* **Development Updates:** Follow the [Official LinkedIn](YOUR_LINKEDIN_URL) for development logs and "Founder's Edition" availability.
+* **Development Updates:** Follow the [Official LinkedIn](https://www.linkedin.com/in/videotronicmaker) for development logs and "Founder's Edition" availability.
 
 ---
 
-© 2025 VTM Systems. All Rights Reserved.
+© 2025 VideotronicMaker. All Rights Reserved.
