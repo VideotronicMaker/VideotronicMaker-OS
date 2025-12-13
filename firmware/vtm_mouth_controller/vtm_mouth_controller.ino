@@ -6,7 +6,7 @@
  * AUTHOR:       Tishin Padilla (VideotronicMaker)
  * DATE:         2025-12-09
  * VERSION:      1.0.0
- * DESCRIPTION:  This sketch controls the 12x8 LED Matrix mouth animation on the 
+ * DESCRIPTION:  This sketch controls the 13x8 LED Matrix mouth animation on the 
  * STM32 Microcontroller (MCU) of the Arduino Uno Q. It functions 
  * as the 'Body' in the Dual-Brain architecture, receiving commands 
  * from the Linux MPU (the 'Brain') via the Arduino Router Bridge 
