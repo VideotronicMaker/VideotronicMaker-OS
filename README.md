@@ -18,37 +18,42 @@
 
 ---
 
-## 🚀 Commercial Release Status: Jan 10, 2025
+# VTM OS™ Platform
 
-The **VTM OS™ Platform** (formerly VideotronicMaker) has evolved from an open research initiative into a proprietary commercial architecture. We are currently finalizing the **Release Candidate (RC1)** for the official launch.
+**Status:** Proprietary Development / Closed Beta
+**Architect:** VTM Systems
 
-This repository now serves as the public landing page for the commercial platform.
+---
+
+## ⚠️ Commercial Pivot Notice
+
+The **VTM OS™ Platform** (formerly VideotronicMaker) has transitioned from an open research initiative into a proprietary commercial architecture. This repository now serves as the public documentation hub for the closed-source platform.
+
+**Note:** Legacy open-source experiments have been archived to support this transition.
+
+---
 
 ## 🧠 System Architecture: VTM Bio-Mimetic™
 
 The VTM OS™ is built on a proprietary **Bio-Mimetic Architecture** that decouples high-level reasoning from real-time physical control, mimicking a biological nervous system.
 
-### 1. The Host Platform (The Mind)
-* **VTM Personality Core™:** A proprietary, secured local host that manages complex reasoning, LLM API bridging (BYOK Architecture), and system telemetry.
-* **Function:** Handles higher-level cognition and "Thought Processing."
+### 1. The Host Platform ("The Mind")
+* **Core:** VTM Personality Core™
+* **Function:** A secured local host managing complex reasoning, LLM API bridging (BYOK Architecture), and system telemetry. Handles high-level cognition and "Thought Processing."
 
-### 2. The BioLink Interface (The Body)
-* **VTM-BioLink Protocol™:** A proprietary, high-speed telemetry standard that replaces legacy serial communication.
-* **Bio-Mimetic Kinetics:** Translates AI intent into organic, fluid motion rather than robotic actuation.
-* **Function:** Handles "Reflex Actions" and real-time motor control.
+### 2. The BioLink Interface ("The Body")
+* **Protocol:** VTM-BioLink Protocol™
+* **Function:** A high-speed telemetry standard replacing legacy serial communication. It translates AI intent into organic, fluid motion rather than robotic actuation.
 
 ---
 
-### 🔒 Access & Licensing
+## 🔒 Access & Licensing
 
-The source code for VTM OS™ is now **Closed Source / Proprietary**.
+The source code for VTM OS™ is **Closed Source / Proprietary**.
 
-* **Commercial Inquiries:** Please contact VTM Systems.
-* **Legacy Support:** Previous open-source experiments have been archived.
-* **Founder's Edition:** Early access will be granted to select partners on **Jan 10, 2025**.
+* **Public Release:** To Be Announced (TBA)
+* **Development Updates:** Follow the [Official LinkedIn](YOUR_LINKEDIN_URL) for development logs and "Founder's Edition" availability.
 
-<br />
+---
 
-<div align="center">
-  <p>© 2025 VTM Systems. All Rights Reserved.</p>
-</div>
+© 2025 VTM Systems. All Rights Reserved.
