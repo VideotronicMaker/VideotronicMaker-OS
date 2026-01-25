@@ -2,12 +2,12 @@
   <img src="vtm_avatar.webp" alt="VTM OS Logo" width="200" height="auto" />
   <h1>VTM OS™ Platform</h1>
   <p>
-    <b>The Proprietary Bio-Mimetic AI Architecture </b>
+    <b>Bio-Mimetic AI Architecture for Arduino Uno Q & Beyond</b>
   </p>
 
-  <img src="https://img.shields.io/badge/Status-Commercial_Release_Candidate-red?style=for-the-badge" alt="Project Status" />
-  <img src="https://img.shields.io/badge/Architecture-Hardware_Agnostic_Host-teal?style=for-the-badge" alt="Platform" />
-  <img src="https://img.shields.io/badge/License-Proprietary_Commercial-blue?style=for-the-badge" alt="License" />
+  <img src="https://img.shields.io/badge/Status-Community_Edition_In_Development-green?style=for-the-badge" alt="Project Status" />
+  <img src="https://img.shields.io/badge/Hardware-Arduino_Uno_Q_Targeted-teal?style=for-the-badge" alt="Platform" />
+  <img src="https://img.shields.io/badge/License-Proprietary_%26_Open_Source-blue?style=for-the-badge" alt="License" />
 
   <br /><br />
 
@@ -20,43 +20,41 @@
 
 # VTM OS™ Platform
 
-**Status:** Proprietary Development / Closed Beta
+**Status:** Proprietary Development / Community Edition Roadmap
 **Producer:** VideotronicMaker
 
 ---
 
-## ⚠️ Commercial Release Notice
-
-The **VTM OS™ Platform** is a new proprietary commercial architecture produced by **VideotronicMaker**. This repository serves as the public documentation hub for the closed-source platform.
-
-**Note:** Technical documentation for this specific commercial release is hosted here. Educational tutorials and open-source community projects continue separately.
+## 🚀 The Mission
+The **VTM OS™ Platform** bridges the gap between maker projects and high-performance embedded AI. By targeting the **Arduino Uno Q**, we are bringing professional-grade architecture to the most accessible hardware in the community.
 
 ---
 
 ## 🧠 System Architecture: VTM Bio-Mimetic™
 
-The VTM OS™ is built on a proprietary **Bio-Mimetic Architecture** that decouples high-level reasoning from real-time physical control, mimicking a biological nervous system.
+The VTM OS™ is built on a **Bio-Mimetic Architecture** that decouples high-level reasoning from real-time physical control, mimicking a biological nervous system.
 
-### 📚 Architecture Documentation
+### 📚 Platform Documentation
 * **[Flagship: Arduino Uno Q Architecture](docs/Arduino_Uno_Q/architecture.md)** (Integrated Model)
 
 ### 1. The Host Platform ("The Mind")
 * **Core:** VTM Personality Core™
-* **Function:** A secured local host managing complex reasoning, LLM API bridging (BYOK Architecture), and system telemetry. Handles high-level cognition and "Thought Processing."
+* **Function:** A secured local host managing complex reasoning, LLM API bridging (BYOK Architecture), and system telemetry.
 
 ### 2. The BioLink Interface ("The Body")
 * **Protocol:** VTM-BioLink Protocol™
-* **Function:** A high-speed telemetry standard replacing legacy serial communication. It translates AI intent into organic, fluid motion rather than robotic actuation.
+* **Function:** Translates AI intent into organic, fluid motion, optimized for the high-speed processing capabilities of the **Uno Q**.
 
 ---
 
-## 🔒 Access & Licensing
+## 🔒 Access & Roadmap
 
-The source code for VTM OS™ is **Closed Source / Proprietary**.
+The VTM OS™ utilizes an **Open-Core** model to support the global maker community:
 
-* **Public Release:** To Be Announced (TBA)
-* **Development Updates:** Follow the [Official LinkedIn](https://www.linkedin.com/in/videotronicmaker) for development logs and "Founder's Edition" availability.
+* **Community Edition:** Open-source foundation in development. Follow this repo for the first public commit.
+* **Commercial Platform:** Proprietary plugins and industrial integrations.
+* **Development Updates:** Follow the [Official LinkedIn](https://www.linkedin.com/company/videotronicmaker-com/) for development logs and "Founder's Edition" availability.
 
 ---
 
-© 2025 VideotronicMaker. All Rights Reserved.
+© 2026 VideotronicMaker. All Rights Reserved.
