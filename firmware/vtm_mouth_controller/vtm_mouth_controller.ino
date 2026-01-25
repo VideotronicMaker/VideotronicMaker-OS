@@ -1,5 +1,5 @@
 /*
- * VTM-OS: The Body - LED Matrix Mouth Controller
+ * VTM-OS:  The Body - LED Matrix Mouth Controller
  * =============================================================================
  * PROJECT:      VideotronicMaker OS (VTM-OS) - The Body
  * FILE:         vtm_mouth_controller.ino
