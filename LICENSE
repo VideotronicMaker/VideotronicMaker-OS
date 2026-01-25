@@ -1,24 +1,21 @@
-PROPRIETARY AND CONFIDENTIAL
-Copyright (c) 2025 Tishin Padilla (VideotronicMaker™)
+MIT License
 
-1. OWNERSHIP
-   This software and associated documentation files (the "Software") are 
-   proprietary to Tishin Padilla (VideotronicMaker™). All rights, title, and interest in 
-   and to the Software, including all intellectual property rights therein, 
-   remain with Tishin Padilla.
+Copyright (c) 2026 Tishin Padilla (VideotronicMaker™)
 
-2. RESTRICTIONS
-   This Software is provided for demonstration and evaluation purposes only. 
-   Unauthorized copying, modification, distribution, or use of this Software, 
-   via any medium, is strictly prohibited without a distinct, written license 
-   agreement from the copyright holder.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-3. NO OPEN SOURCE LICENSE
-   This repository is NOT licensed under any open-source license (e.g., MIT, 
-   Apache, GPL). No rights are granted to use this Software in any commercial 
-   or production application.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-4. TRADEMARKS
-   VTM OS™ and VTM-Protocol™ are trademarks of Tishin Padilla.
-
-For licensing inquiries, please contact: https://www.linkedin.com/in/tishinpadilla/
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
