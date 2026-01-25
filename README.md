@@ -1,13 +1,13 @@
 <div align="center">
   <img src="vtm_avatar.webp" alt="VTM OS Logo" width="200" height="auto" />
-  <h1>VTM OS™ Platform</h1>
+  <h1>VTM OS™: Community Edition</h1>
   <p>
-    <b>Bio-Mimetic AI Architecture for Arduino Uno Q & Beyond</b>
+    <b>Open-Core Bio-Mimetic AI Architecture for Arduino Uno Q</b>
   </p>
 
-  <img src="https://img.shields.io/badge/Status-Community_Edition_In_Development-green?style=for-the-badge" alt="Project Status" />
-  <img src="https://img.shields.io/badge/Hardware-Arduino_Uno_Q_Targeted-teal?style=for-the-badge" alt="Platform" />
-  <img src="https://img.shields.io/badge/License-Proprietary_%26_Open_Source-blue?style=for-the-badge" alt="License" />
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
+  <img src="https://img.shields.io/badge/Model-Open_Core-blue?style=for-the-badge" alt="Model" />
+  <img src="https://img.shields.io/badge/Hardware-Arduino_Uno_Q-teal?style=for-the-badge" alt="Platform" />
 
   <br /><br />
 
@@ -20,41 +20,39 @@
 
 # VTM OS™ Platform
 
-**Status:** Proprietary Development / Community Edition Roadmap
-**Producer:** VideotronicMaker
-
----
-
-## 🚀 The Mission
-The **VTM OS™ Platform** bridges the gap between maker projects and high-performance embedded AI. By targeting the **Arduino Uno Q**, we are bringing professional-grade architecture to the most accessible hardware in the community.
-
----
+The **VTM OS™** is an open-core platform designed to bridge the gap between high-level cognitive processing and real-time physical control. This repository hosts the **Community Edition**, providing a foundational framework for makers and developers to implement bio-mimetic AI on microcontrollers like the **Arduino Uno Q**.
 
 ## 🧠 System Architecture: VTM Bio-Mimetic™
 
-The VTM OS™ is built on a **Bio-Mimetic Architecture** that decouples high-level reasoning from real-time physical control, mimicking a biological nervous system.
-
-### 📚 Platform Documentation
-* **[Flagship: Arduino Uno Q Architecture](docs/Arduino_Uno_Q/architecture.md)** (Integrated Model)
+The architecture mimics a biological nervous system by decoupling high-level reasoning from real-time execution.
 
 ### 1. The Host Platform ("The Mind")
-* **Core:** VTM Personality Core™
-* **Function:** A secured local host managing complex reasoning, LLM API bridging (BYOK Architecture), and system telemetry.
+* **VTM Personality Core™ (Community):** Basic local host management and LLM API bridging.
+* **Function:** Handles cognition and "Thought Processing" to determine intent.
 
 ### 2. The BioLink Interface ("The Body")
-* **Protocol:** VTM-BioLink Protocol™
-* **Function:** Translates AI intent into organic, fluid motion, optimized for the high-speed processing capabilities of the **Uno Q**.
+* **VTM-BioLink Protocol™ (Community):** The open telemetry standard for translating AI intent into fluid, organic motion.
+* **Target Hardware:** Optimized for the high-speed execution of the **Arduino Uno Q**.
 
 ---
 
-## 🔒 Access & Roadmap
+## 🛠 Open-Core Licensing Model
 
-The VTM OS™ utilizes an **Open-Core** model to support the global maker community:
+VTM OS™ operates on an **Open-Core** model to support the maker community while maintaining professional-grade standards for industrial applications.
 
-* **Community Edition:** Open-source foundation in development. Follow this repo for the first public commit.
-* **Commercial Platform:** Proprietary plugins and industrial integrations.
-* **Development Updates:** Follow the [Official LinkedIn](https://www.linkedin.com/company/videotronicmaker-com/) for development logs and "Founder's Edition" availability.
+* **Community Edition (This Repo):** Licensed under **MIT**. This includes the core communication protocols and basic architecture for non-commercial use and community experimentation.
+* **Professional/Industrial:** Advanced personality modules, secured telemetry, and proprietary hardware integrations are available under a **Proprietary License**.
 
 ---
 
-© 2026 VideotronicMaker. All Rights Reserved.
+## 🚀 Getting Started
+
+1.  **Follow the Build:** Check the `docs/` folder for the initial Arduino Uno Q integration maps.
+2.  **Contribute:** Submit issues or pull requests to improve the Community Edition core.
+3.  **Stay Updated:** Follow the [Official LinkedIn](https://www.linkedin.com/in/tishinpadilla/) for development logs.
+
+**Learn with me as I learn.**
+
+---
+
+© 2026 VideotronicMaker. All Rights Reserved. Trademarks of Tishin Padilla.
