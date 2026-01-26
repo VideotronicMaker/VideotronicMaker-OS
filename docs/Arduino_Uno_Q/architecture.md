@@ -61,7 +61,7 @@ flowchart TD
 * **Inference Pipeline:**
     * **Input:** User audio is captured in the browser and sent to the server as a **`.webm` blob**. This file is uploaded directly to the **Multimodal Inference API**, utilizing the model's native audio understanding (bypassing the need for a separate speech-to-text transcriber).
     * **Reasoning:** The multimodal input is processed by the AI, contextualized by a dynamic System Message (`system_message.txt`) that defines the bot's persona and operational constraints.
-    * **Output:** Text responses are converted to high-fidelity audio via **Google Cloud TTS** (specifically the "Chirp" Studio voice engine). The server generates an MP3 file and returns the URL to the client for browser-based playback.
+    * **Output:** Text responses are delivered directly to the browser UI. High-fidelity audio via the Google Cloud TTS Chirp Engine is a feature of the Professional/Industrial modules and is not included in this Community Edition.
 
 ### 2. The Real-Time Layer ("The Body")
 * **Runtime:** C++ (Arduino Sketch) running on the dedicated STM32 microcontroller.
