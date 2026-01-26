@@ -1,19 +1,14 @@
 <div align="center">
-  <img src="vtm_avatar.webp" alt="VTM OS Logo" width="200" height="auto" />
+  <img src="static/vtm_avatar.webp" alt="VTM OS Logo" width="200" height="auto" />
   <h1>VTM OS™: Community Edition</h1>
-  <p>
-    <b>Open-Core Bio-Mimetic AI Architecture for Arduino Uno Q</b>
-  </p>
-
+  <p><b>Open-Core Bio-Mimetic AI Architecture for Arduino Uno Q</b></p>
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
   <img src="https://img.shields.io/badge/Model-Open_Core-blue?style=for-the-badge" alt="Model" />
   <img src="https://img.shields.io/badge/Hardware-Arduino_Uno_Q-teal?style=for-the-badge" alt="Platform" />
 
   <br /><br />
 
-  <p>
-    <i>"Sustained, disciplined learning, fueled by natural gravitation, accumulates into the capacity for creation."</i>
-  </p>
+  <p><i>"Learn with me as I learn."</i></p>
 </div>
 
 ---
@@ -47,12 +42,46 @@ VTM OS™ operates on an **Open-Core** model to support the maker community whil
 
 ## 🚀 Getting Started
 
-1.  **Follow the Build:** Check the `docs/` folder for the initial Arduino Uno Q integration maps.
-2.  **Contribute:** Submit issues or pull requests to improve the Community Edition core.
-3.  **Stay Updated:** Follow the [Official LinkedIn](https://www.linkedin.com/in/tishinpadilla/) for development logs.
+### 1. Environment Setup
+To ensure a clean installation, it is highly recommended to use a virtual environment.
 
-**Learn with me as I learn.**
+**MacOS/Linux:**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+**Windows:**
+```dos
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+### 2. Configuration
+Ensure your `service_account.json` is located in the root directory. This provides the necessary Application Default Credentials (ADC) for the Gemini API to function correctly.
+
+**Set your API Key (Optional but recommended):**
+```bash
+export GEMINI_API_KEY='your_actual_api_key_here'
+```
+
+### 3. Community Radio Setup
+The built-in music player automatically scans the `static/music` directory.
+* Drop your `.mp3` or `.wav` files into `./static/music/`.
+* The system will detect new tracks and populate the playlist upon the next browser refresh.
+
+### 4. Hardware Integration
+* **Arduino Sketch:** Upload `vtm_mouth_controller.ino` to your Arduino Uno Q.
+* **Architecture:** Review `architecture.md` for detailed mapping of the "Mind-to-Body" bridge.
 
 ---
+
+## 🤝 Contribution & Support
+* **Contribute:** Submit issues or pull requests to improve the Community Edition core.
+* **Stay Updated:** Follow the Official LinkedIn for development logs.
+
+**Learn with me as I learn.**
 
 © 2026 VideotronicMaker. All Rights Reserved. Trademarks of Tishin Padilla.
