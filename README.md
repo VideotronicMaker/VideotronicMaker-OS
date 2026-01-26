@@ -20,7 +20,7 @@ The **VTM OS™** is an open-core platform designed to bridge the gap between hi
 ## 📖 Documentation & The Growth Guide
 The VTM OS is more than just a repository; it's an evolving prototyping ecosystem. To understand the "Mind-Body-Link" architecture and start your own evolutionary build, visit our official documentation:
 
-👉 **[Enter the VTM OS Wiki](https://github.com/YOUR_USERNAME/YOUR_REPO/wiki)**
+👉 **[Enter the VTM OS Wiki](https://github.com/VideotronicMaker/VideotronicMaker-OS/wiki)**
 
 * **[Evolutionary Growth Guide](https://github.com/VideotronicMaker/VideotronicMaker-OS/wiki/Growth-Guide):** The 5-stage roadmap from a box of parts to an AI Hub.
 * **[Technical Specs](https://github.com/VideotronicMaker/VideotronicMaker-OS/wiki/Technical-Specs):** Deep dive into the VTM-BioLink™ Protocol.
