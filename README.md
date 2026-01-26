@@ -22,9 +22,9 @@ The VTM OS is more than just a repository; it's an evolving prototyping ecosyste
 
 👉 **[Enter the VTM OS Wiki](https://github.com/YOUR_USERNAME/YOUR_REPO/wiki)**
 
-* **[Evolutionary Growth Guide](https://github.com/YOUR_USERNAME/YOUR_REPO/wiki/Growth-Guide):** The 5-stage roadmap from a box of parts to an AI Hub.
-* **[Technical Specs](https://github.com/YOUR_USERNAME/YOUR_REPO/wiki/Technical-Specs):** Deep dive into the VTM-BioLink™ Protocol.
-* **[Troubleshooting](https://github.com/YOUR_USERNAME/YOUR_REPO/wiki/Troubleshooting):** Solving common connection and environment issues.
+* **[Evolutionary Growth Guide](https://github.com/VideotronicMaker/VideotronicMaker-OS/wiki/Growth-Guide):** The 5-stage roadmap from a box of parts to an AI Hub.
+* **[Technical Specs](https://github.com/VideotronicMaker/VideotronicMaker-OS/wiki/Technical-Specs):** Deep dive into the VTM-BioLink™ Protocol.
+* **[Troubleshooting](https://github.com/VideotronicMaker/VideotronicMaker-OS/wiki/Troubleshooting):** Solving common connection and environment issues.
 
 ---
 
