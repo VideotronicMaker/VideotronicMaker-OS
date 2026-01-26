@@ -80,8 +80,7 @@ The built-in music player automatically scans the `static/music` directory.
 
 ## 🤝 Contribution & Support
 * **Contribute:** Submit issues or pull requests to improve the Community Edition core.
-* **Stay Updated:** Follow the Official LinkedIn for development logs.
-
+* **Stay Updated:** Follow the [Official LinkedIn](https://www.linkedin.com/in/tishinpadilla/) for development logs.
 **Learn with me as I learn.**
 
 © 2026 VideotronicMaker. All Rights Reserved. Trademarks of Tishin Padilla.
