@@ -21,12 +21,11 @@ flowchart TD
         direction TB
         Flask["Flask Server<br/>app.py"]
         
-        UI -->|Audio Blob .webm| Flask
-        Flask -->|Audio Response URL| UI
+        UI -->|Text Input| Flask
+        Flask -->|JSON Text Response| UI
         
-        Flask -->|Upload Audio| LLM["LLM Inference API<br/>Multimodal Provider"]
-        LLM -->|Text Response| TTS["Google Cloud TTS<br/>Chirp Neural Engine"]
-        TTS -->|MP3 File| Flask
+        Flask -->|Request| LLM["Gemini 2.0 Flash API<br/>Cognitive Provider"]
+        LLM -->|Response| Flask
         
         Flask -->|VTM-BioLink Protocol™| Bridge["Hardware Bridge"]
     end
@@ -44,7 +43,7 @@ flowchart TD
     classDef body fill:#fff3e0,stroke:#e65100,stroke-width:2px;
     classDef ui fill:#f3e5f5,stroke:#4a148c,stroke-width:2px;
 
-    class Flask,LLM,TTS,Bridge mind;
+    class Flask,LLM,Bridge mind;
     class MCU,Matrix,Servos body;
     class UI,Face ui;
     
