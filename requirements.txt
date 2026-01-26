@@ -1,0 +1,6 @@
+# VTM OS Community Edition - Core Dependencies
+# Install using: pip install -r requirements.txt
+
+Flask==3.0.0
+google-generativeai==0.3.2
+psutil==5.9.6

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideotronicMaker OS</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.webp') }}">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+        
+        :root {
+            --ubuntu-dark: #2C2C2C;
+            --ubuntu-panel: rgba(40, 40, 40, 0.98);
+            --ubuntu-orange: #E95420;
+            --success-green: #34d399;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--ubuntu-dark);
+            color: #F5F5F5;
+            overflow: hidden;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* --- UTILS --- */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1f2937; }
+        ::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #6b7280; }
+
+        /* --- RADIO TITLE CSS --- */
+        .labs-title { display: flex; justify-content: center; align-items: center; margin-bottom: 1rem; }
+        .labs-title .letter { display: inline-block; font-weight: 700; text-transform: uppercase; line-height: 1; text-shadow: 0 0 5px rgba(94, 210, 237, 0.6); transition: all 0.2s ease-out; padding: 0 2px; }
+        .labs-title .letter:hover { transform: translateY(-3px) scale(1.1) rotate(0deg); text-shadow: 0 0 10px #5ed2ed, 0 0 15px #FF69B4; z-index: 1; }
+        .labs-title .letter:nth-child(1) { font-family: 'Orbitron', sans-serif; font-size: 42px; color: #00a1c4; transform: rotate(-3deg); }
+        .labs-title .letter:nth-child(2) { font-family: 'Press Start 2P', cursive; font-size: 32px; color: #db7a31; transform: rotate(2deg); margin-top: 5px; }
+        .labs-title .letter:nth-child(3) { font-family: 'Major Mono Display', monospace; font-size: 48px; color: #46a568; transform: rotate(-1deg); }
+        .labs-title .letter:nth-child(4) { font-family: 'Share Tech Mono', monospace; font-size: 38px; color: #eca53a; transform: rotate(3deg); }
+        .labs-title .letter:nth-child(5) { font-family: 'Orbitron', sans-serif; font-size: 42px; color: #00a1c4; transform: rotate(-2deg); }
+
+        /* --- SPLASH SCREEN --- */
+        #splash-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #1a1a1a; z-index: 9999; display: flex; flex-direction: column; justify-content: center; align-items: center; transition: opacity 1s ease-out; }
+        .hud-logo-container { position: relative; width: 120px; height: 120px; display: flex; justify-content: center; align-items: center; margin-bottom: 2rem; }
+        .hud-logo { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; z-index: 2; border: 2px solid rgba(255, 255, 255, 0.1); animation: breathe 3s infinite ease-in-out; }
+        .hud-ring { position: absolute; width: 100%; height: 100%; border-radius: 50%; border: 2px solid transparent; border-top-color: var(--ubuntu-orange); border-bottom-color: var(--ubuntu-orange); animation: spin-slow 4s linear infinite; z-index: 1; }
+        .hud-ring::before { content: ''; position: absolute; top: -5px; left: -5px; right: -5px; bottom: -5px; border-radius: 50%; border: 1px dashed rgba(233, 84, 32, 0.4); animation: spin-reverse 8s linear infinite; }
+        .hud-text { letter-spacing: 0.2em; font-weight: 300; color: #888; font-size: 0.8rem; margin-top: 0.5rem; }
+
+        /* --- APP GRID (NEXUS) --- */
+        .app-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.5rem; padding: 2rem; max-width: 1000px; margin: 0 auto; }
+        .app-icon { display: flex; flex-direction: column; align-items: center; justify-content: center; transition: transform 0.2s; cursor: pointer; }
+        .app-icon:hover { transform: scale(1.1); }
+        .app-icon-bg { width: 64px; height: 64px; border-radius: 18px; background-color: #1f2937; display: flex; align-items: center; justify-content: center; margin-bottom: 0.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); overflow: hidden; }
+        .app-icon-img { width: 75%; height: 75%; object-fit: contain; }
+        .app-label { font-size: 0.75rem; color: #ccc; font-weight: 500; margin-top: 4px; text-align: center; width: 80px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+        /* --- CONTROLS --- */
+        .view-section { display: none; height: 100%; flex-direction: column; overflow-y: auto; }
+        .view-section.active { display: flex; }
+        .control-button { color: #AAAAAA; padding: 10px 20px; border-bottom: 3px solid transparent; cursor: pointer; transition: all 0.2s; }
+        .control-button:hover { color: white; }
+        .control-button.active { color: var(--ubuntu-orange); border-bottom-color: var(--ubuntu-orange); }
+        
+        input[type=range] { -webkit-appearance: none; background: transparent; }
+        input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; height: 16px; width: 16px; border-radius: 50%; background: var(--ubuntu-orange); cursor: pointer; margin-top: -6px; box-shadow: 0 0 10px rgba(233, 84, 32, 0.5); }
+        input[type=range]::-webkit-slider-runnable-track { width: 100%; height: 4px; cursor: pointer; background: #4a4a4a; border-radius: 2px; }
+        
+        /* --- ANIMATIONS --- */
+        @keyframes spin-slow { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        @keyframes spin-reverse { 0% { transform: rotate(360deg); } 100% { transform: rotate(0deg); } }
+        @keyframes breathe { 0%, 100% { transform: scale(1); filter: brightness(1); } 50% { transform: scale(1.05); filter: brightness(1.2); } }
+        
+        /* --- VISUALIZER ANIMATIONS --- */
+        @keyframes eq-bounce { 0% { height: 10%; } 50% { height: 100%; } 100% { height: 10%; } }
+        
+        .viz-bar { width: 8px; background-color: var(--ubuntu-orange); border-radius: 2px; opacity: 0.3; height: 20%; transition: opacity 0.3s; }
+        .viz-active .viz-bar { opacity: 1; animation: eq-bounce 0.5s infinite ease-in-out alternate; }
+        .viz-active .viz-bar:nth-child(1) { animation-duration: 0.6s; }
+        .viz-active .viz-bar:nth-child(2) { animation-duration: 0.4s; }
+        .viz-active .viz-bar:nth-child(3) { animation-duration: 0.5s; }
+        .viz-active .viz-bar:nth-child(4) { animation-duration: 0.35s; }
+        .viz-active .viz-bar:nth-child(5) { animation-duration: 0.55s; }
+
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+    <div id="splash-screen">
+        <div class="hud-logo-container">
+            <div class="hud-ring"></div>
+            <img src="{{ url_for('static', filename='vtm_avatar.webp') }}" class="hud-logo">
+        </div>
+        <div class="text-2xl font-light tracking-[0.3em] text-white mb-2">VideotronicMaker OS</div>
+        <div id="splash-status" class="hud-text font-mono">INITIALIZING...</div>
+    </div>
+
+    <div id="main-panel" class="flex-1 flex flex-col h-screen relative min-w-0">
+        
+        <header class="h-16 px-8 flex justify-between items-center bg-[#282828] border-b border-gray-700 flex-shrink-0 relative z-20">
+            <div class="flex items-center space-x-4">
+                <div class="w-10 h-10 bg-gray-700 rounded-full overflow-hidden border border-gray-600 shadow-md">
+                    <img src="{{ url_for('static', filename='vtm_avatar.webp') }}" class="w-full h-full object-cover">
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-lg font-bold leading-tight">VTM OS</span>
+                    <span id="system-status-badge" class="text-[9px] text-orange-500 uppercase tracking-widest">VTM OS v1.0 - Community Edition ONLINE</span>
+                </div>
+            </div>
+            <div class="flex items-center space-x-8">
+                <div class="flex items-center space-x-3">
+                    <span class="text-[10px] font-bold text-gray-500">CPU</span>
+                    <div class="w-16 h-1.5 bg-gray-700 rounded-full overflow-hidden"><div id="cpu-bar" class="h-full bg-orange-500 transition-all duration-500" style="width: 0%;"></div></div>
+                    <span id="cpu-text" class="text-[10px] font-mono text-gray-400 w-8 text-right">0%</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <span class="text-[10px] font-bold text-gray-500">RAM</span>
+                    <div class="w-16 h-1.5 bg-gray-700 rounded-full overflow-hidden"><div id="ram-bar" class="h-full bg-orange-500 transition-all duration-500" style="width: 0%;"></div></div>
+                    <span id="ram-text" class="text-[10px] font-mono text-gray-400 w-8 text-right">0%</span>
+                </div>
+                <div class="h-8 w-px bg-gray-700 mx-2"></div>
+                <div class="flex items-center space-x-2">
+                    <span class="text-[10px] font-bold text-gray-500">TEMP</span>
+                    <span id="temp-text" class="text-sm font-mono text-green-400">--°F</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span class="text-[10px] font-bold text-gray-500">PWR</span>
+                    <div class="w-2.5 h-2.5 rounded-full bg-green-400 shadow-[0_0_5px_rgba(74,222,128,0.6)]"></div>
+                </div>
+            </div>
+        </header>
+
+        <main id="view-chat" class="view-section active p-6 flex-grow min-h-0">
+            <div id="chat-log" class="flex-grow overflow-y-auto space-y-4 pr-2 mb-4"></div>
+            <div class="flex items-center space-x-3 flex-shrink-0">
+                <textarea id="user-input" placeholder="Command..." class="flex-grow p-4 rounded-xl bg-gray-800 text-white border border-gray-700 focus:border-orange-500 outline-none resize-none h-14"></textarea>
+                <button id="send-button" class="p-4 rounded-xl bg-orange-600 hover:bg-orange-500 text-white transition"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg></button>
+            </div>
+        </main>
+
+        <main id="view-nexus" class="view-section p-6 flex-grow items-center justify-center overflow-y-auto">
+            <div class="app-grid">
+                <div class="app-icon" onclick="window.open('https://linkedin.com', '_blank')"><div class="app-icon-bg text-blue-600"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-5.43 6.8A3.53 3.53 0 0 1 17 13.37V19h-3v-5.5a.5.5 0 0 0-.5-.5.5.5 0 0 0-.5.5V19H10v-6h3v.83c.6-.9 1.82-1.31 2.67-1.03M7 19h3v-9H7v9m1.5-10.5a1.5 1.5 0 1 1-1.5-1.5 1.5 1.5 0 0 1 1.5 1.5z"/></svg></div><span class="app-label">LinkedIn</span></div>
+                <div class="app-icon" onclick="window.open('https://gemini.google.com', '_blank')"><div class="app-icon-bg text-blue-300"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L9.5 9.5 2 12l7.5 2.5L12 22l2.5-7.5L22 12l-7.5-2.5z"/></svg></div><span class="app-label">Gemini</span></div>
+                <div class="app-icon" onclick="window.open('https://docs.google.com', '_blank')"><div class="app-icon-bg text-blue-500"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg></div><span class="app-label">Docs</span></div>
+                <div class="app-icon" onclick="window.open('https://videotronicmaker.com', '_blank')"><div class="app-icon-bg"><img src="{{ url_for('static', filename='vtm 2024 logo.webp') }}" class="app-icon-img"></div><span class="app-label">VTM Site</span></div>
+                <div class="app-icon" onclick="window.open('https://tishin.online', '_blank')"><div class="app-icon-bg"><img src="{{ url_for('static', filename='TP-logo-2023.webp') }}" class="app-icon-img"></div><span class="app-label">Tishin.Online</span></div>
+                <div class="app-icon" onclick="window.open('https://webdesign.tishin.online', '_blank')"><div class="app-icon-bg"><img src="{{ url_for('static', filename='fav boxes-v2-logo.webp') }}" class="app-icon-img"></div><span class="app-label">Web Design</span></div>
+                <div class="app-icon" onclick="window.open('https://sheets.google.com', '_blank')"><div class="app-icon-bg text-green-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/></svg></div><span class="app-label">Sheets</span></div>
+                <div class="app-icon" onclick="window.open('https://keep.google.com', '_blank')"><div class="app-icon-bg text-yellow-300"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/></svg></div><span class="app-label">Keep</span></div>
+                <div class="app-icon" onclick="window.open('https://analytics.google.com', '_blank')"><div class="app-icon-bg text-orange-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg></div><span class="app-label">Analytics</span></div>
+                <div class="app-icon" onclick="window.open('https://github.com', '_blank')"><div class="app-icon-bg text-white"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></div><span class="app-label">GitHub</span></div>
+            </div>
+        </main>
+
+        <main id="view-music" class="view-section p-6 flex-grow items-center justify-center">
+            <div class="bg-[#1f2937] p-6 rounded-3xl shadow-2xl border border-gray-700 w-96 text-center">
+                <div class="flex flex-col items-center justify-center mb-4">
+                    <div class="w-16 h-16 bg-gray-700 rounded-full overflow-hidden border-2 border-gray-600 shadow-lg mb-4">
+                        <img src="{{ url_for('static', filename='vtm 2024 logo.webp') }}" class="w-full h-full object-cover">
+                    </div>
+                    <div class="labs-title"><span class="letter">R</span><span class="letter">A</span><span class="letter">D</span><span class="letter">I</span><span class="letter">O</span></div>
+                </div>
+                <div class="h-24 bg-gray-900 rounded-xl mb-6 flex items-end justify-center space-x-2 p-4 overflow-hidden border border-gray-600" id="music-visualizer">
+                     <div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div>
+                </div>
+                <p id="track-name" class="text-orange-400 text-sm font-mono truncate mb-6">No Track Selected</p>
+                <div class="w-full mb-6">
+                    <input type="range" id="music-progress" min="0" value="0" class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-orange-500">
+                    <div class="flex justify-between text-[10px] text-gray-500 font-mono mt-1"><span id="current-time">0:00</span><span id="total-duration">0:00</span></div>
+                </div>
+                <div class="flex justify-center items-center space-x-6">
+                    <button onclick="prevTrack()" class="text-gray-400 hover:text-white transition"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg></button>
+                    <button onclick="togglePlay()" class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center text-white shadow-lg hover:scale-105 transition">
+                        <svg id="play-icon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    <button onclick="nextTrack()" class="text-gray-400 hover:text-white transition"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg></button>
+                </div>
+                <p id="track-status" class="text-xs text-gray-600 mt-4">Library Offline</p>
+            </div>
+        </main>
+
+        <footer class="bg-[#282828] border-t border-gray-700 p-2 flex-shrink-0 relative z-20">
+            <div class="flex justify-center space-x-12">
+                <button class="control-button active" onclick="switchView('chat')" title="Chat">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
+                </button>
+                
+                <button class="control-button" onclick="switchView('nexus')" title="App Nexus">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"/></svg>
+                </button>
+
+                <button class="control-button" onclick="switchView('music')" title="Music">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+                </button>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
