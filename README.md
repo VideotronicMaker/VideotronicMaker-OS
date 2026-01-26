@@ -67,6 +67,33 @@ Ensure your `service_account.json` is located in the root directory. This provid
 export GEMINI_API_KEY='your_actual_api_key_here'
 ```
 
+### ⚙️ Google Cloud & API Configuration
+
+The **VTM OS™** requires a Google Cloud Service Account to access the Gemini 2.0 Flash API. 
+
+#### 1. Create a Project & Enable API
+1.  Go to the [Google Cloud Console](https://console.cloud.google.com/).
+2.  Create a **New Project** (e.g., "VTM-OS-Project").
+3.  Search for **"Generative Language API"** in the top search bar and click **Enable**.
+
+#### 2. Create Service Account Credentials
+1.  Navigate to **APIs & Services > Credentials**.
+2.  Click **+ Create Credentials** and select **Service Account**.
+3.  Name the account `vtm-os-user` and click **Create and Continue**.
+4.  For the role, select **Project > Viewer** (or similar) and click **Done**.
+
+
+
+#### 3. Generate and Place the JSON Key
+1.  Click on the newly created service account email address in the "Service Accounts" list.
+2.  Click the **Keys** tab at the top.
+3.  Click **Add Key** > **Create New Key**.
+4.  Select **JSON** and click **Create**.
+5.  A file will download to your Mac. **Rename** this file to exactly `service_account.json`.
+6.  Move the file into the root directory of the `vtm-os-community-edition` folder.
+
+> **Note:** The `app.py` script looks specifically for `service_account.json` in the root folder to authenticate your AI requests.
+
 ### 3. Community Radio Setup
 The built-in music player automatically scans the `static/music` directory.
 * Drop your `.mp3` or `.wav` files into `./static/music/`.
