@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="static/vtm_avatar.webp" alt="VTM OS Logo" width="200" height="auto" />
+  <img src="vtm_avatar.webp" alt="VTM OS Logo" width="200" height="auto" />
   <h1>VTM OS™: Community Edition</h1>
   <p><b>Open-Core Bio-Mimetic AI Architecture for Arduino Uno Q</b></p>
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
