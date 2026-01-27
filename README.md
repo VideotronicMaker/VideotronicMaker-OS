@@ -43,8 +43,6 @@ The VTM OS is more than just a repository; it's an evolving prototyping ecosyste
 
 The architecture mimics a biological nervous system by decoupling high-level reasoning from real-time execution. 
 
-
-
 ### 1. The Host Platform ("The Mind")
 * **VTM Personality Core™ (Community):** Basic local host management and LLM API bridging.
 * **Function:** Handles cognition and "Thought Processing" to determine intent.
@@ -62,8 +60,6 @@ VTM OS™ operates on an **Open-Core** model to support the maker community whil
 * **Community Edition (This Repo):** Licensed under **MIT**. This includes the core communication protocols and basic architecture for non-commercial use and community experimentation.
 * **Professional/Industrial:** Advanced personality modules, secured telemetry, and **Proprietary Hardware Reference Designs** (including the **VTM Reference Chassis** with integrated modular storage systems) are available under a **Proprietary License**.
 
-
-
 ---
 
 ## 🚀 Getting Started
@@ -77,7 +73,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Windows (Command Prompt)
+### Windows (Command Prompt-not yet tested)
 ```cmd
 python -m venv venv
 venv\Scripts\activate
@@ -85,13 +81,39 @@ pip install -r requirements.txt
 set GEMINI_API_KEY=your_actual_api_key_here
 ```
 
-### Windows (PowerShell)
+### Windows (PowerShell-not yet tested)
 ```powershell
 python -m venv venv
 .\venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 $env:GEMINI_API_KEY="your_actual_api_key_here"
 ```
+
+### 🚀 Uno Q SBC - Community Edition Quick Start
+Running VTM OS™ directly on the Arduino Uno Q (SBC/MPU) allows for a fully integrated AI-to-Hardware experience. This version is optimized for the internal VTM-BioLink™ bridge.
+
+### 1. Manual Terminal Setup (Uno Q)
+Open a terminal on the Uno Q and run these commands to prepare the environment:
+
+```bash
+sudo apt update && sudo apt install -y python3-pip python3-venv
+python3 -m venv venv
+source venv/bin/activate
+pip install flask pyserial google-generativeai psutil
+
+```
+
+#### 4. Launch the Mind
+Activate your environment and provide your Gemini API Key to start the system:
+
+```bash
+source venv/bin/activate
+export GEMINI_API_KEY="your_key_here"
+python3 app.py
+```
+
+#### 5. Access the Nexus Dashboard
+Open your browser on your host machine to: **http://localhost:5002**
 
 ## 2. Configuration
 Ensure your `service_account.json` is located in the root directory. This provides the necessary Application Default Credentials (ADC) for the Gemini API to function correctly.
