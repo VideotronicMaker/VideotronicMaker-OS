@@ -17,6 +17,17 @@
 
 The **VTM OS™** is an open-core platform designed to bridge the gap between high-level cognitive processing and real-time physical control. This repository hosts the **Community Edition**, providing a foundational framework for makers and developers to implement bio-mimetic AI on microcontrollers like the **Arduino Uno Q**.
 
+### 🎥 Watch the Demos
+<div align="center">
+
+[![Building an AI Desk Bot with Arduino Uno Q](https://ytcards.demolab.com/?id=WiXRPLrF5m0&title=Building+an+AI+Desk+Bot+with+Arduino+Uno+Q&lang=en&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5)](https://www.youtube.com/watch?v=WiXRPLrF5m0)
+[![Arduino UNO Q Robot Project: Dual-Brain Sync](https://ytcards.demolab.com/?id=xDm-rMR-oBs&title=Arduino+UNO+Q+Robot+Project%3A+Dual-Brain+Sync&lang=en&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5)](https://www.youtube.com/watch?v=xDm-rMR-oBs)
+[![LoRa Field Research Station with Arduino Uno Q](https://ytcards.demolab.com/?id=Xr02o3HJoto&title=LoRa+Field+Research+Station+with+Arduino+Uno+Q&lang=en&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5)](https://www.youtube.com/watch?v=Xr02o3HJoto)
+
+</div>
+
+---
+
 ## 📖 Documentation & The Growth Guide
 The VTM OS is more than just a repository; it's an evolving prototyping ecosystem. To understand the "Mind-Body-Link" architecture and start your own evolutionary build, visit our official documentation:
 
