@@ -1,4 +1,0 @@
-flask
-pyserial
-google-generativeai
-psutil
