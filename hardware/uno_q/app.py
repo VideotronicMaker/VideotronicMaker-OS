@@ -15,9 +15,7 @@ from flask import Flask, render_template, request, jsonify
 import google.generativeai as genai
 import psutil
 import sys
-
 # Set a conservative recursion limit to prevent stack exhaustion
-
 sys.setrecursionlimit(1000)
 
 # --- CONFIGURATION ---
