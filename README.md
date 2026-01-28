@@ -93,7 +93,7 @@ $env:GEMINI_API_KEY="your_actual_api_key_here"
 Running VTM OS™ directly on the Arduino Uno Q (SBC/MPU) allows for a fully integrated AI-to-Hardware experience. This version is optimized for the internal VTM-BioLink™ bridge.
 
 ### 1. Manual Terminal Setup (Uno Q)
-Open a terminal on the Uno Q and run these commands to prepare the environment (I installed my environment on an external sd card mounted in the USB hub for my 4 GB / 16 GB Uno Q.):
+Open a terminal on the Uno Q and run these commands to prepare the environment:
 
 ```bash
 sudo apt update && sudo apt install -y python3-pip python3-venv
