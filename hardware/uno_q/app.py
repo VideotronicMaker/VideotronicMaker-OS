@@ -14,6 +14,11 @@ import serial.tools.list_ports
 from flask import Flask, render_template, request, jsonify
 import google.generativeai as genai
 import psutil
+import sys
+
+# Set a conservative recursion limit to prevent stack exhaustion
+
+sys.setrecursionlimit(1000)
 
 # --- CONFIGURATION ---
 genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
