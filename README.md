@@ -42,8 +42,8 @@ The **VTM OS™** is an open-core platform designed to bridge the gap between hi
   <br /><br />
   <h3>👉 <a href="https://videotronicmaker.com/arduino-uno-q-prototyping-platform-p3/">VIEW THE REFERENCE DESIGN & BOM</a></h3>
 </div>
----
 
+---
 # VTM OS™ Platform
 
 The **VTM OS™** is an open-core platform designed to bridge the gap between high-level cognitive processing and real-time physical control. This repository hosts the **Community Edition**, providing a foundational framework for makers and developers to implement bio-mimetic AI on microcontrollers like the **Arduino Uno Q**.
