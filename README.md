@@ -13,21 +13,6 @@
 
 ---
 
-<div align="center">
-  <img src="vtm_avatar.webp" alt="VTM OS Logo" width="200" height="auto" />
-  <h1>VTM OS™: Community Edition</h1>
-  <p><b>Open-Core Bio-Mimetic AI Architecture for Arduino Uno Q</b></p>
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
-  <img src="https://img.shields.io/badge/Model-Open_Core-blue?style=for-the-badge" alt="Model" />
-  <img src="https://img.shields.io/badge/Hardware-Arduino_Uno_Q-teal?style=for-the-badge" alt="Platform" />
-
-  <br /><br />
-
-  <p><i>"Learn with me as I learn."</i></p>
-</div>
-
----
-
 # VTM OS™ Platform
 
 The **VTM OS™** is an open-core platform designed to bridge the gap between high-level cognitive processing and real-time physical control. This repository hosts the **Community Edition**, providing a foundational framework for makers and developers to implement bio-mimetic AI on microcontrollers like the **Arduino Uno Q**.
