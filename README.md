@@ -44,7 +44,6 @@ The **VTM OS™** is an open-core platform designed to bridge the gap between hi
 </div>
 
 ---
-# VTM OS™ Platform
 
 The **VTM OS™** is an open-core platform designed to bridge the gap between high-level cognitive processing and real-time physical control. This repository hosts the **Community Edition**, providing a foundational framework for makers and developers to implement bio-mimetic AI on microcontrollers like the **Arduino Uno Q**.
 
