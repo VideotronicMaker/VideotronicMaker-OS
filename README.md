@@ -47,6 +47,12 @@ To replicate the VTM P³ "Laboratory Standard" frame, these are the verified V-S
 | **The "Everything" Kit** | M5 T-Nuts & Screws | 240 Pcs | **$12.99** | [**Amazon Link**](https://amzn.to/3NMlLFc) | **Essential.** Includes 8mm, 10mm, 12mm, and 14mm screws. |
 | **Corner Brackets** | 2020 L-Brackets | 30 Sets | **$12.99** | [**Amazon Link**](https://amzn.to/4k5ZWMM) | The 90-degree joints for the frame. Comes with its own matching screws. |
 
+#### 3. The Muscles (Motion)
+*The robotic kinematics. This kit provides the arm structure and high-torque servos in a single package.*
+| Component | Spec | Quantity | Price | Purchase Link | Notes |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **6DOF LeArm Kit** | Full Metal + 6x Digital Servos | 2 Kits | **$139.99** | [**Amazon Link**](https://amzn.to/4amAcbE) | **Verified.** Features anti-stall digital servos. Durable metal construction. |
+
 ---
 
 ### 🎥 Watch the Demos
