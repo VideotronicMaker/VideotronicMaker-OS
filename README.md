@@ -18,19 +18,27 @@
 The **VTM OS™** is an open-core platform designed to bridge the gap between high-level cognitive processing and real-time physical control. This repository hosts the **Community Edition**, providing a foundational framework for makers and developers to implement bio-mimetic AI on microcontrollers like the **Arduino Uno Q**.
 
 ## 🤖 Official Hardware: VTM P³
-**Code needs a body.** The **VTM P³ (Physical Prototyping Platform)** is the official reference hardware for VTM OS. It is a modular "Vertical Workbench" built by hacking a standard Ender 3 frame.
+**Code needs a body.** The **VTM P³ (Physical Prototyping Platform)** is the official reference hardware for VTM OS. It is a modular "Vertical Workbench" built by hacking standard 3D printer parts.
 
 <div align="center">
   <a href="https://videotronicmaker.com/arduino-uno-q-prototyping-platform-p3/">
     <img src="https://videotronicmaker.com/wp-content/uploads/2026/01/p-3-sketch-scaled.webp" alt="VTM P3 Reference Design" width="100%">
   </a>
-  <br /><br />
-  <h3>👉 <a href="https://videotronicmaker.com/arduino-uno-q-prototyping-platform-p3/">VIEW THE REFERENCE DESIGN & BOM</a></h3>
 </div>
 
----
+### 🏗️ VTM P³ Hardware Bill of Materials (BOM)
+To replicate the VTM P³ "Laboratory Standard" frame, these are the verified V-Slot components. 
+*Note: This utilizes the "Ender 3" V-Slot standard for maximum compatibility with 3D printed mods.*
 
-The **VTM OS™** is an open-core platform designed to bridge the gap between high-level cognitive processing and real-time physical control. This repository hosts the **Community Edition**, providing a foundational framework for makers and developers to implement bio-mimetic AI on microcontrollers like the **Arduino Uno Q**.
+| Component | Spec | Quantity Needed | Purchase Link | Build Notes |
+| :--- | :--- | :--- | :--- | :--- |
+| **Main Towers (Y-Axis)** | 2040 V-Slot (500mm) | 4 Rails | [**Amazon Link**](https://amzn.to/4ksoaRP) | **⚠️ Important:** Link is for a 2-Pack. **Order Qty: 2** to get the 4 rails needed. |
+| **Z-Axis Feet** | 4040 V-Slot (400mm) | 2 Rails | [**Amazon Link**](https://amzn.to/3NG4dKW) | The heavy base. Provides the "desk footprint" stability. |
+| **Base Crossbar** | 4040 V-Slot (300mm) | 1 Rail | [**Amazon Link**](https://amzn.to/4qPQz6F) | Link is for a 2-Pack. You will have 1 spare rail for future upgrades. |
+| **Drawer Supports** | 2040 V-Slot (400mm) | 1 Rail | [**Amazon Link**](https://amzn.to/3LXaHEI) | Link is for a 2-Pack. You will have 1 spare rail (good for testing). |
+| **Top Rail (X-Axis)** | 2020 V-Slot (300mm) | 1 Rail | [**Amazon Link**](https://amzn.to/4k9y7Dd) | Link is for a 4-Pack. You get 3 spare rails for mounting lights/cameras. |
+
+---
 
 ### 🎥 Watch the Demos
 <div align="center">
