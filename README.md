@@ -18,7 +18,7 @@
 The **VTM OS™** is an open-core platform designed to bridge the gap between high-level cognitive processing and real-time physical control. This repository hosts the **Community Edition**, providing a foundational framework for makers and developers to implement bio-mimetic AI on microcontrollers like the **Arduino Uno Q**.
 
 ## 🤖 Official Hardware: VTM P³
-**Code needs a body.** The **VTM P³ (Physical Prototyping Platform)** is the official reference hardware for VTM OS. It is a modular "Vertical Workbench" built by hacking standard 3D printer parts.
+**Code needs a body.** The **VTM P³ (Physical Prototyping Platform)** is the official reference hardware for VTM OS. It is a modular "Vertical Workbench" built using standard industrial automation parts.
 
 <div align="center">
   <a href="https://videotronicmaker.com/arduino-uno-q-prototyping-platform-p3/">
@@ -28,8 +28,7 @@ The **VTM OS™** is an open-core platform designed to bridge the gap between hi
 </div>
 
 ### 🏗️ VTM P³ Hardware Bill of Materials (BOM)
-To replicate the VTM P³ "Laboratory Standard" frame, these are the verified V-Slot components. 
-*Note: This utilizes the "Ender 3" V-Slot standard for maximum compatibility with 3D printed mods.*
+To replicate the VTM P³ "Laboratory Standard" frame, these are the verified V-Slot components.
 
 #### 1. The Skeleton (Aluminum)
 | Component | Spec | Qty Needed | Price (Approx) | Purchase Link | Build Notes |
@@ -40,20 +39,32 @@ To replicate the VTM P³ "Laboratory Standard" frame, these are the verified V-S
 | **Drawer Supports** | 2040 V-Slot (400mm) | 1 Rail | **$18.99** | [**Amazon Link**](https://amzn.to/3LXaHEI) | Link is for a 2-Pack. You will have 1 spare rail (good for testing). |
 | **Top Rail (X-Axis)** | 2020 V-Slot (300mm) | 1 Rail | **$16.99** | [**Amazon Link**](https://amzn.to/4k9y7Dd) | Link is for a 4-Pack. You get 3 spare rails for mounting lights/cameras. |
 
-#### 2. The Joints (Fasteners)
-*These are the "Glue" of the system. You will use these for the frame and for mounting the electronics.*
+#### 2. The Joints (Fasteners & Brackets)
 | Component | Spec | Quantity | Price | Purchase Link | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **The "Everything" Kit** | M5 T-Nuts & Screws | 240 Pcs | **$12.99** | [**Amazon Link**](https://amzn.to/3NMlLFc) | **Essential.** Includes 8mm, 10mm, 12mm, and 14mm screws. |
-| **Corner Brackets** | 2020 L-Brackets | 30 Sets | **$12.99** | [**Amazon Link**](https://amzn.to/4k5ZWMM) | The 90-degree joints for the frame. Comes with its own matching screws. |
+| **Corner Brackets** | 2020 L-Brackets | 30 Sets | **$12.99** | [**Amazon Link**](https://amzn.to/4k5ZWMM) | The 90-degree joints for the frame. Comes with matching screws. |
+| **Monitor Mount** | VESA 75/100 Plate | 1 Unit | **~$19.99** | [**Amazon Search**](https://amzn.to/3vH7Q7w) | *Search for "Sim Rig VESA Mount".* Bolts directly to the 2020 Top Rail. |
 
 #### 3. The Muscles (Motion)
-*The robotic kinematics. This kit provides the arm structure and high-torque servos in a single package.*
+*The robotic kinematics. This kit provides the arm structure and high-torque servos in a single package. Two arms are required for full bi-manual operation.*
 | Component | Spec | Quantity | Price | Purchase Link | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **6DOF LeArm Kit** | Full Metal + 6x Digital Servos | 2 Kits | **$139.99** | [**Amazon Link**](https://amzn.to/4amAcbE) | **Verified.** Features anti-stall digital servos. Durable metal construction. |
+| **6DOF LeArm Kit** | Full Metal + 6x Digital Servos | 2 Kits | **$139.99** | [**Amazon Link**](https://amzn.to/4amAcbE) | **⚠️ Important:** Order Qty: 2. Features anti-stall digital servos. |
 
 ---
+
+### 💰 Platform Build Estimate
+*The VTM P³ is an Open Source Reference Design. The costs below represent the specific "Laboratory Standard" configuration used in the documentation, but builders are encouraged to swap or scavenge parts.*
+
+| Subsystem | Components | Cost to Replicate |
+| :--- | :--- | :--- |
+| **1. The Skeleton** | Industrial Aluminum Extrusion Frame | **~$172.00** |
+| **2. The Joints** | Fasteners, Brackets & VESA Mount | **~$46.00** |
+| **3. The Muscles** | 2x 6DOF Metal Arm Kits (Digital Servos) | **~$280.00** |
+| **TOTAL ESTIMATE** | **Full Prototyping Platform** | **~$498.00** |
+
+> **🎓 The Open Source Advantage:** A proprietary dual-arm research robot (like the WidowX) typically costs **$2,500+** because you are paying for custom manufacturing and gatekeeping. The VTM P³ achieves similar utility for **<$500** by standardizing on mass-produced, off-the-shelf automation components that you can repair, replace, or upgrade yourself.
 
 ### 🎥 Watch the Demos
 <div align="center">
