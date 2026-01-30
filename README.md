@@ -24,19 +24,28 @@ The **VTM OS™** is an open-core platform designed to bridge the gap between hi
   <a href="https://videotronicmaker.com/arduino-uno-q-prototyping-platform-p3/">
     <img src="https://videotronicmaker.com/wp-content/uploads/2026/01/p-3-sketch-scaled.webp" alt="VTM P3 Reference Design" width="100%">
   </a>
+  <p><i>*Prices listed below are as of Jan 30, 2026 and subject to change.*</i></p>
 </div>
 
 ### 🏗️ VTM P³ Hardware Bill of Materials (BOM)
 To replicate the VTM P³ "Laboratory Standard" frame, these are the verified V-Slot components. 
 *Note: This utilizes the "Ender 3" V-Slot standard for maximum compatibility with 3D printed mods.*
 
-| Component | Spec | Quantity Needed | Purchase Link | Build Notes |
-| :--- | :--- | :--- | :--- | :--- |
-| **Main Towers (Y-Axis)** | 2040 V-Slot (500mm) | 4 Rails | [**Amazon Link**](https://amzn.to/4ksoaRP) | **⚠️ Important:** Link is for a 2-Pack. **Order Qty: 2** to get the 4 rails needed. |
-| **Z-Axis Feet** | 4040 V-Slot (400mm) | 2 Rails | [**Amazon Link**](https://amzn.to/3NG4dKW) | The heavy base. Provides the "desk footprint" stability. |
-| **Base Crossbar** | 4040 V-Slot (300mm) | 1 Rail | [**Amazon Link**](https://amzn.to/4qPQz6F) | Link is for a 2-Pack. You will have 1 spare rail for future upgrades. |
-| **Drawer Supports** | 2040 V-Slot (400mm) | 1 Rail | [**Amazon Link**](https://amzn.to/3LXaHEI) | Link is for a 2-Pack. You will have 1 spare rail (good for testing). |
-| **Top Rail (X-Axis)** | 2020 V-Slot (300mm) | 1 Rail | [**Amazon Link**](https://amzn.to/4k9y7Dd) | Link is for a 4-Pack. You get 3 spare rails for mounting lights/cameras. |
+#### 1. The Skeleton (Aluminum)
+| Component | Spec | Qty Needed | Price (Approx) | Purchase Link | Build Notes |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Main Towers (Y-Axis)** | 2040 V-Slot (500mm) | 4 Rails | **$26.99** | [**Amazon Link**](https://amzn.to/4ksoaRP) | **⚠️ Important:** Link is for a 2-Pack. **Order Qty: 2** to get the 4 rails needed. |
+| **Z-Axis Feet** | 4040 V-Slot (400mm) | 2 Rails | **$46.02** | [**Amazon Link**](https://amzn.to/3NG4dKW) | The heavy base. Provides the "desk footprint" stability. |
+| **Base Crossbar** | 4040 V-Slot (300mm) | 1 Rail | **$35.82** | [**Amazon Link**](https://amzn.to/4qPQz6F) | Link is for a 2-Pack. You will have 1 spare rail for future upgrades. |
+| **Drawer Supports** | 2040 V-Slot (400mm) | 1 Rail | **$18.99** | [**Amazon Link**](https://amzn.to/3LXaHEI) | Link is for a 2-Pack. You will have 1 spare rail (good for testing). |
+| **Top Rail (X-Axis)** | 2020 V-Slot (300mm) | 1 Rail | **$16.99** | [**Amazon Link**](https://amzn.to/4k9y7Dd) | Link is for a 4-Pack. You get 3 spare rails for mounting lights/cameras. |
+
+#### 2. The Joints (Fasteners)
+*These are the "Glue" of the system. You will use these for the frame and for mounting the electronics.*
+| Component | Spec | Quantity | Price | Purchase Link | Notes |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **The "Everything" Kit** | M5 T-Nuts & Screws | 240 Pcs | **$12.99** | [**Amazon Link**](https://amzn.to/3NMlLFc) | **Essential.** Includes 8mm, 10mm, 12mm, and 14mm screws. |
+| **Corner Brackets** | 2020 L-Brackets | 30 Sets | **$12.99** | [**Amazon Link**](https://amzn.to/4k5ZWMM) | The 90-degree joints for the frame. Comes with its own matching screws. |
 
 ---
 
