@@ -139,7 +139,15 @@ python3 app.py
 ### 🚀 Uno Q SBC - Community Edition Quick Start
 Running VTM OS™ directly on the Arduino Uno Q (SBC/MPU) allows for a fully integrated AI-to-Hardware experience. This version is optimized for the internal VTM-BioLink™ bridge.
 
-### 1. Manual Terminal Setup (Uno Q)
+### 1. Download and Navigate
+Clone the repository and move into the directory. This ensures the environment is built inside the project folder, not your home directory.
+
+```bash
+git clone https://github.com/VideotronicMaker/VideotronicMaker-OS.git
+cd VideotronicMaker-OS
+```
+
+### 2. Manual Terminal Setup (Uno Q)
 Open a terminal on the Uno Q and run these commands to prepare the environment:
 
 ```bash
@@ -149,7 +157,7 @@ source venv/bin/activate
 pip install flask pyserial "google-generativeai>=0.8.3" psutil
 ```
 
-#### 2. Launch the Mind
+#### 3. Launch the Mind
 Ensure your service_account.json is in the project root. Activate the environment and start the system:
 ```bash
 source venv/bin/activate
