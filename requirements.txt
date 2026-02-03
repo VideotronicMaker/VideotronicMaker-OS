@@ -4,4 +4,3 @@
 Flask==3.0.0
 google-generativeai==0.3.2
 psutil==5.9.6
-protobuf>=5.28.2
