@@ -113,29 +113,27 @@ VTM OS™ operates on an **Open-Core** model to support the maker community whil
 
 ## 🚀 Getting Started
 
-### 1. Environment Setup (macOS/Linux)
-To ensure a clean installation, it is highly recommended to use a virtual environment.
+### 1. Download and Navigate
+Clone the repository and move into the directory. This ensures the environment is built inside the project folder, not your home directory.
+
+```bash
+git clone [https://github.com/VideotronicMaker/VideotronicMaker-OS.git](https://github.com/VideotronicMaker/VideotronicMaker-OS.git)
+cd VideotronicMaker-OS
+```
+
+### 2. Environment Setup (macOS/Linux)
+Create an isolated virtual environment to prevent library conflicts.
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
-
-### Windows (Command Prompt-not yet tested)
-```cmd
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
-set GEMINI_API_KEY=your_actual_api_key_here
-```
-
-### Windows (PowerShell-not yet tested)
-```powershell
-python -m venv venv
-.\venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-$env:GEMINI_API_KEY="your_actual_api_key_here"
+#### 3. Launch the Mind
+Ensure your service_account.json is in the project root. Activate the environment and start the system:
+```bash
+source venv/bin/activate
+python3 app.py
 ```
 
 ### 🚀 Uno Q SBC - Community Edition Quick Start
@@ -148,16 +146,13 @@ Open a terminal on the Uno Q and run these commands to prepare the environment:
 sudo apt update && sudo apt install -y python3-pip python3-venv
 python3 -m venv venv
 source venv/bin/activate
-pip install flask pyserial google-generativeai psutil
-
+pip install flask pyserial "google-generativeai>=0.8.3" psutil
 ```
 
-#### 4. Launch the Mind
-Activate your environment and provide your Gemini API Key to start the system:
-
+#### 2. Launch the Mind
+Ensure your service_account.json is in the project root. Activate the environment and start the system:
 ```bash
 source venv/bin/activate
-export GEMINI_API_KEY="your_key_here"
 python3 app.py
 ```
 
