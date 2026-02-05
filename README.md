@@ -114,8 +114,12 @@ VTM OS™ operates on an **Open-Core** model to support the maker community whil
 ## 🚀 Getting Started
 
 ### Watch the Video
+<div align="center">
 
 [![Arduino Uno Q Project: VTM OS Installation Guide for macOS](https://ytcards.demolab.com/?id=81OwakGelIU&title=Arduino+Uno+Q+Project%3A+VTM+OS+Installation+Guide+for+macOS&lang=en&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5)](https://www.youtube.com/watch?v=81OwakGelIU)
+
+[![VTM OS: Arduino Uno Q Installation Guide](https://ytcards.demolab.com/?id=imKBDTqGAus&title=VTM+OS%3A+Arduino+Uno+Q+Installation+Guide&lang=en&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5)](https://www.youtube.com/watch?v=imKBDTqGAus)
+</div>
 
 ### 1. Download and Navigate
 Clone the repository and move into the directory. This ensures the environment is built inside the project folder, not your home directory.
