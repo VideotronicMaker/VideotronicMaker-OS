@@ -121,7 +121,7 @@ VTM OS™ operates on an **Open-Core** model to support the maker community whil
 Clone the repository and move into the directory. This ensures the environment is built inside the project folder, not your home directory.
 
 ```bash
-git clone [https://github.com/VideotronicMaker/VideotronicMaker-OS.git](https://github.com/VideotronicMaker/VideotronicMaker-OS.git)
+git clone "https://github.com/VideotronicMaker/VideotronicMaker-OS.git"(https://github.com/VideotronicMaker/VideotronicMaker-OS.git)
 cd VideotronicMaker-OS
 ```
 
