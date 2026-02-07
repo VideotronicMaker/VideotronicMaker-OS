@@ -27,6 +27,15 @@ The **VTM OS™** is an open-core platform designed to bridge the gap between hi
   <p><i>*Prices listed below are as of Jan 30, 2026 and subject to change.*</i></p>
 </div>
 
+### 🎥 Featured: The Music Video Guide
+<div align="center">
+
+<a href="https://www.youtube.com/watch?v=tJTPic1ApBQ">
+  <img src="https://img.youtube.com/vi/tJTPic1ApBQ/maxresdefault.jpg" width="100%" alt="VTM Pro Maker Workbench Official Music Video">
+</a>
+
+</div>
+
 ### 🏗️ VTM P³ Hardware Bill of Materials (BOM)
 To replicate the VTM P³ "Laboratory Standard" frame, these are the verified V-Slot components.
 
