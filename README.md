@@ -18,11 +18,7 @@
 VTM OS™ is a modular prototyping platform designed to take you from the terminal to a customizable UI. Together with the VTM P³ frame, it provides a foundational framework for experimenting with bio-mimetic AI. While inspired by and optimized for the Arduino Uno Q as the preferred board, the system is flexible and can be utilized on a Mac, PC, or any other SBC.
 
 ### 🎥 Featured: The Music Video Guide
-<div align="center">
-  <a href="[https://www.youtube.com/watch?v=tJTPic1ApBQ](https://youtu.be/wjo62hXbkyg)" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.youtube.com/vi/tJTPic1ApBQ/maxresdefault.jpg" width="100%" alt="Video Guide">
-  </a>
-</div>
+<div align="center"> <a href="https://youtu.be/wjo62hXbkyg" target="_blank" rel="noopener noreferrer"> <img src="https://img.youtube.com/vi/wjo62hXbkyg/maxresdefault.jpg" width="100%" alt="Video Guide"> </a> </div>
 
 ## 🤖 Official Hardware: VTM P³
 **Code needs a body.** The **VTM P³ (Physical Prototyping Platform)** is the official reference hardware for VTM OS. It is a modular 'Vertical Workbench' built using standard physical computing parts.
