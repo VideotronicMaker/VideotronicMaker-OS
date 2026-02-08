@@ -81,18 +81,6 @@ To build the VTM P³ frame, these are the **suggested** V-Slot components.
 | **3. The Muscles** | 2x 6DOF Arms + PWM Servo Driver | **~$286.00** |
 | **TOTAL ESTIMATE** | **Full Prototyping Platform** | **~$504.00** |
 
----
-
-### 💰 Platform Build Estimate
-*The VTM P³ is an Open Source Reference Design. The costs below represent the specific "Laboratory Standard" configuration used in the documentation, but feel free to swap or scavenge parts.*
-
-| Subsystem | Components | Cost to Replicate |
-| :--- | :--- | :--- |
-| **1. The Skeleton** | Industrial Aluminum Extrusion Frame | **~$172.00** |
-| **2. The Joints** | Fasteners, Brackets & VESA Mount | **~$46.00** |
-| **3. The Muscles** | 2x 6DOF Metal Arm Kits (Digital Servos) | **~$280.00** |
-| **TOTAL ESTIMATE** | **Full Prototyping Platform** | **~$498.00** |
-
 **🎓 The Open Source Advantage:** Build at Your Own Pace: The VTM P³ is modular, allowing you to build it part by part as your budget and time allow.
 
 ### 🎥 Watch the Demos
