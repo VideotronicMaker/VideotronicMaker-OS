@@ -34,8 +34,12 @@ VTM OS™ is a modular prototyping platform designed to take you from the termin
   <p><i>*Prices listed below are as of Jan 30, 2026 and subject to change. As an Amazon Associate I earn from qualifying purchases. This means I may make a small commission if you buy through these links at no extra cost to you.*</i></p>
 </div>
 
+It is a modular "Vertical Workbench" built using standard **physical computing** parts. **Build at Your Own Pace:** The VTM P³ is modular, allowing you to build it part by part as your budget and time allow.
+
+*Prices listed below are as of Jan 30, 2026 and subject to change. **As an Amazon Associate I earn from qualifying purchases.** This means I may make a small commission if you buy through these links at no extra cost to you.*
+
 ### 🏗️ VTM P³ Hardware Bill of Materials (BOM)
-To build the VTM P³ frame, these are the suggested V-Slot components.
+To build the VTM P³ frame, these are the **suggested** V-Slot components.
 
 #### 1. The Skeleton (Aluminum)
 | Component | Spec | Qty Needed | Price (Approx) | Purchase Link | Build Notes |
@@ -63,6 +67,19 @@ To build the VTM P³ frame, these are the suggested V-Slot components.
 | **Arduino Braccio** | 6DOF Shield-compatible Arm | 2 Kits | **$275.00** | [**Arduino Store**](https://store-usa.arduino.cc/products/tinkerkit-braccio-robot) | **⚠️ Note:** Currently Sold Out. Includes official Braccio Shield. |
 | **diymore ROT3U Arm** | 6DOF Aluminium Structure | 2 Kits | **$38.99** | [**Amazon Link**](https://amzn.to/4arJwds) | **⚠️ Note:** Unassembled parts. Does **NOT** include servos. |
 | **MG996R Servos (6pk)** | Brass Gear / High Torque | 2 Packs | **$34.99** | [**Amazon Link**](https://amzn.to/4qlYFmk) | Necessary for diymore ROT3U or custom frame builds. |
+| **PCA9685 PWM Driver** | 16-Channel 12-bit I2C | 1 Unit | **$5.99** | [**Amazon Link**](https://amzn.to/4tjYIBX) | **Essential:** Offloads servo PWM timing from the Uno Q. |
+
+---
+
+### 💰 Platform Build Estimate
+*The VTM P³ is an Open Source Reference Design. The costs below represent the specific "Laboratory Standard" configuration used in the documentation, but feel free to swap or scavenge parts.*
+
+| Subsystem | Components | Cost to Replicate |
+| :--- | :--- | :--- |
+| **1. The Skeleton** | Physical Computing Frame | **~$172.00** |
+| **2. The Joints** | Fasteners, Brackets & VESA Mount | **~$46.00** |
+| **3. The Muscles** | 2x 6DOF Arms + PWM Servo Driver | **~$286.00** |
+| **TOTAL ESTIMATE** | **Full Prototyping Platform** | **~$504.00** |
 
 ---
 
