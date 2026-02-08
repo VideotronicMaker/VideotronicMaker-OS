@@ -55,10 +55,12 @@ To build the VTM P³ frame, these are the suggested V-Slot components.
 
 #### 3. The Muscles (Motion)
 *The robotic kinematics. This kit provides the arm structure and high-torque servos in a single package. Two arms are required for full bi-manual operation.*
+
 | Component | Spec | Quantity | Price | Purchase Link | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **6DOF LeArm Kit** | Full Metal + 6x Digital Servos | 2 Kits | **$139.99** | [**Amazon Link**](https://amzn.to/4amAcbE) | **⚠️ Important:** Features anti-stall digital servos. |
 | **Hiwonder xArm1S** | 6DOF Full Metal + Wireless/App | 2 Kits | **$199.99** | [**Amazon Link**](https://amzn.to/4kkAB1K) | Premium kit. Supports PC, App, and Mouse control. |
+| **Arduino Braccio** | 6DOF Shield-compatible Arm | 2 Kits | **$275.00** | [**Arduino Store**](https://store-usa.arduino.cc/products/tinkerkit-braccio-robot) | **⚠️ Note:** Currently Sold Out. Includes official Braccio Shield. |
 | **diymore ROT3U Arm** | 6DOF Aluminium Structure | 2 Kits | **$38.99** | [**Amazon Link**](https://amzn.to/4arJwds) | **⚠️ Note:** Unassembled parts. Does **NOT** include servos. |
 | **MG996R Servos (6pk)** | Brass Gear / High Torque | 2 Packs | **$34.99** | [**Amazon Link**](https://amzn.to/4qlYFmk) | Necessary for diymore ROT3U or custom frame builds. |
 
