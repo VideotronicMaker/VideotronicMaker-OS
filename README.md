@@ -17,6 +17,13 @@
 
 The **VTM OS™** is an open-core platform designed to bridge the gap between high-level cognitive processing and real-time physical control. This repository hosts the **Community Edition**, providing a foundational framework for makers and developers to implement bio-mimetic AI on microcontrollers like the **Arduino Uno Q**.
 
+### 🎥 Featured: The Music Video Guide
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=tJTPic1ApBQ" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.youtube.com/vi/tJTPic1ApBQ/maxresdefault.jpg" width="100%" alt="Video Guide">
+  </a>
+</div>
+
 ## 🤖 Official Hardware: VTM P³
 **Code needs a body.** The **VTM P³ (Physical Prototyping Platform)** is the official reference hardware for VTM OS. It is a modular 'Vertical Workbench' built using standard physical computing parts.
 
@@ -27,17 +34,8 @@ The **VTM OS™** is an open-core platform designed to bridge the gap between hi
   <p><i>*Prices listed below are as of Jan 30, 2026 and subject to change. As an Amazon Associate I earn from qualifying purchases. This means I may make a small commission if you buy through these links at no extra cost to you.*</i></p>
 </div>
 
-### 🎥 Featured: The Music Video Guide
-<div align="center">
-
-<a href="https://www.youtube.com/watch?v=tJTPic1ApBQ">
-  <img src="https://img.youtube.com/vi/tJTPic1ApBQ/maxresdefault.jpg" width="100%" alt="VTM Pro Maker Workbench Official Music Video">
-</a>
-
-</div>
-
 ### 🏗️ VTM P³ Hardware Bill of Materials (BOM)
-To replicate the VTM P³ "Laboratory Standard" frame, these are the verified V-Slot components.
+To build the VTM P³ frame, these are the suggested V-Slot components.
 
 #### 1. The Skeleton (Aluminum)
 | Component | Spec | Qty Needed | Price (Approx) | Purchase Link | Build Notes |
@@ -67,7 +65,7 @@ To replicate the VTM P³ "Laboratory Standard" frame, these are the verified V-S
 ---
 
 ### 💰 Platform Build Estimate
-*The VTM P³ is an Open Source Reference Design. The costs below represent the specific "Laboratory Standard" configuration used in the documentation, but builders are encouraged to swap or scavenge parts.*
+*The VTM P³ is an Open Source Reference Design. The costs below represent the specific "Laboratory Standard" configuration used in the documentation, but feel free to swap or scavenge parts.*
 
 | Subsystem | Components | Cost to Replicate |
 | :--- | :--- | :--- |
@@ -76,7 +74,7 @@ To replicate the VTM P³ "Laboratory Standard" frame, these are the verified V-S
 | **3. The Muscles** | 2x 6DOF Metal Arm Kits (Digital Servos) | **~$280.00** |
 | **TOTAL ESTIMATE** | **Full Prototyping Platform** | **~$498.00** |
 
-> **🎓 The Open Source Advantage:** A proprietary dual-arm research robot (like the WidowX) typically costs **$2,500+** because you are paying for custom manufacturing and gatekeeping. The VTM P³ achieves similar utility for **<$500** by standardizing on mass-produced, off-the-shelf automation components that you can repair, replace, or upgrade yourself.
+**🎓 The Open Source Advantage:** Build at Your Own Pace: The VTM P³ is modular, allowing you to build it part by part as your budget and time allow.
 
 ### 🎥 Watch the Demos
 <div align="center">
@@ -90,7 +88,7 @@ To replicate the VTM P³ "Laboratory Standard" frame, these are the verified V-S
 ---
 
 ## 📖 Documentation & The Growth Guide
-The VTM OS is more than just a repository; it's an evolving prototyping ecosystem. To understand the "Mind-Body-Link" architecture and start your own evolutionary build, visit our official documentation:
+The VTM OS is more than just a repository; it's an evolving prototyping ecosystem. To understand the "Mind-Body-Link" architecture and start your own evolutionary build, visit the official documentation:
 
 👉 **[Enter the VTM OS Wiki](https://github.com/VideotronicMaker/VideotronicMaker-OS/wiki)**
 
