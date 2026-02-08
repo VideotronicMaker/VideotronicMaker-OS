@@ -24,7 +24,7 @@ The **VTM OS™** is an open-core platform designed to bridge the gap between hi
   <a href="https://videotronicmaker.com/arduino-uno-q-prototyping-platform-p3/">
     <img src="https://videotronicmaker.com/wp-content/uploads/2026/01/p-3-sketch-scaled.webp" alt="VTM P3 Reference Design" width="100%">
   </a>
-  <p><i>*Prices listed below are as of Jan 30, 2026 and subject to change.*</i></p>
+  <p><i>*Prices listed below are as of Jan 30, 2026 and subject to change.  These are Amazon Affilate links so I make a small percentage of sales.*</i></p>
 </div>
 
 ### 🎥 Featured: The Music Video Guide
