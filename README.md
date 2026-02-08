@@ -15,7 +15,7 @@
 
 # VTM OS™ Platform
 
-The **VTM OS™** is an open-core platform designed to bridge the gap between high-level cognitive processing and real-time physical control. This repository hosts the **Community Edition**, providing a foundational framework for makers and developers to implement bio-mimetic AI on microcontrollers like the **Arduino Uno Q**.
+VTM OS™ is a modular prototyping platform designed to take you from the terminal to a customizable UI. Together with the VTM P³ frame, it provides a foundational framework for experimenting with bio-mimetic AI. While inspired by and optimized for the Arduino Uno Q as the preferred board, the system is flexible and can be utilized on a Mac, PC, or any other SBC.
 
 ### 🎥 Featured: The Music Video Guide
 <div align="center">
