@@ -19,7 +19,7 @@ VTM OS™ is a modular prototyping platform designed to take you from the termin
 
 ### 🎥 Featured: The Music Video Guide
 <div align="center">
-  <a href="https://www.youtube.com/watch?v=tJTPic1ApBQ" target="_blank" rel="noopener noreferrer">
+  <a href="[https://www.youtube.com/watch?v=tJTPic1ApBQ](https://youtu.be/wjo62hXbkyg)" target="_blank" rel="noopener noreferrer">
     <img src="https://img.youtube.com/vi/tJTPic1ApBQ/maxresdefault.jpg" width="100%" alt="Video Guide">
   </a>
 </div>
