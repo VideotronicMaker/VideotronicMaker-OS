@@ -18,13 +18,13 @@
 The **VTM OS™** is an open-core platform designed to bridge the gap between high-level cognitive processing and real-time physical control. This repository hosts the **Community Edition**, providing a foundational framework for makers and developers to implement bio-mimetic AI on microcontrollers like the **Arduino Uno Q**.
 
 ## 🤖 Official Hardware: VTM P³
-**Code needs a body.** The **VTM P³ (Physical Prototyping Platform)** is the official reference hardware for VTM OS. It is a modular "Vertical Workbench" built using standard industrial automation parts.
+**Code needs a body.** The **VTM P³ (Physical Prototyping Platform)** is the official reference hardware for VTM OS. It is a modular 'Vertical Workbench' built using standard physical computing parts.
 
 <div align="center">
   <a href="https://videotronicmaker.com/arduino-uno-q-prototyping-platform-p3/">
     <img src="https://videotronicmaker.com/wp-content/uploads/2026/01/p-3-sketch-scaled.webp" alt="VTM P3 Reference Design" width="100%">
   </a>
-  <p><i>*Prices listed below are as of Jan 30, 2026 and subject to change.  These are Amazon Affilate links so I make a small percentage of sales.*</i></p>
+  <p><i>*Prices listed below are as of Jan 30, 2026 and subject to change. As an Amazon Associate I earn from qualifying purchases. This means I may make a small commission if you buy through these links at no extra cost to you.*</i></p>
 </div>
 
 ### 🎥 Featured: The Music Video Guide
