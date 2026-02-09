@@ -115,14 +115,15 @@ The architecture mimics a biological nervous system by decoupling high-level rea
 
 ---
 
-## 🛠 Open-Core Licensing Model
+## 🛠 Licensing & Open Source Standard
 
-As of February 9, 2026: VTM OS™ operates on an **Open-Core** model to support the maker community while maintaining professional-grade standards for industrial applications.
+**As of February 9, 2026**, VTM OS™ follows the official Arduino licensing model to ensure community transparency and protect the "Mind-Body-Link" as an open ecosystem.
 
-* **VTM OS™ Community Edition (This Repo):** Licensed under **MIT**. This includes the core communication protocols and the foundational architecture. It is free for the community to use, modify, and build upon.
-* **Future Plugins & Advanced Modules:** While the community is encouraged to build on the open-core version, official VTM OS™ expansion modules and advanced personality plugins released by VideotronicMaker going forward will be licensed for **Non-Commercial** use.
-* **VTM P³ Physical Build:** The final, completed physical hardware designs and integrated reference chassis are protected under a **Non-Commercial** license. This ensures the "Mastery" of the physical platform remains focused on education and individual makers rather than unauthorized commercial resale.
-* **Professional/Industrial:** Secured telemetry and proprietary hardware reference designs for industrial-scale deployment are available under a **Proprietary License**.
+* **Software (VTM OS™ Core):** Licensed under the **GNU General Public License (GPL v3)**. Following the standard of the Arduino IDE and CLI, this ensures that the foundational logic remains open. You are free to use, modify, and distribute this software, provided that all derivative works are also shared under the same GPL v3 license.
+* **Hardware (VTM P³ Framework):** Licensed under **Creative Commons Attribution-ShareAlike 4.0 (CC-BY-SA-4.0)**. As per Arduino's requirements for derived hardware, the full CAD files and Bill of Materials (BOM) for the VTM P³ are public. Any derived physical designs must give attribution to VideotronicMaker and be shared under these same terms.
+* **Trademarks:** In compliance with the Arduino Trademark Policy, the **Arduino®** name is used only to describe compatibility. The names **VideotronicMaker™**, **VTM OS™**, and **VTM P³™** are trademarks of Tishin Padilla. Official logos and branding are reserved for official VTM releases.
+
+"Learn with me as I learn."
 
 ---
 
