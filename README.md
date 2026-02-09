@@ -117,10 +117,12 @@ The architecture mimics a biological nervous system by decoupling high-level rea
 
 ## 🛠 Open-Core Licensing Model
 
-VTM OS™ operates on an **Open-Core** model to support the maker community while maintaining professional-grade standards for industrial applications.
+As of February 9, 2026: VTM OS™ operates on an **Open-Core** model to support the maker community while maintaining professional-grade standards for industrial applications.
 
-* **Community Edition (This Repo):** Licensed under **MIT**. This includes the core communication protocols and basic architecture for non-commercial use and community experimentation.
-* **Professional/Industrial:** Advanced personality modules, secured telemetry, and **Proprietary Hardware Reference Designs** (including the **VTM Reference Chassis** with integrated modular storage systems) are available under a **Proprietary License**.
+* **VTM OS™ Community Edition (This Repo):** Licensed under **MIT**. This includes the core communication protocols and the foundational architecture. It is free for the community to use, modify, and build upon.
+* **Future Plugins & Advanced Modules:** While the community is encouraged to build on the open-core version, official VTM OS™ expansion modules and advanced personality plugins released by VideotronicMaker going forward will be licensed for **Non-Commercial** use.
+* **VTM P³ Physical Build:** The final, completed physical hardware designs and integrated reference chassis are protected under a **Non-Commercial** license. This ensures the "Mastery" of the physical platform remains focused on education and individual makers rather than unauthorized commercial resale.
+* **Professional/Industrial:** Secured telemetry and proprietary hardware reference designs for industrial-scale deployment are available under a **Proprietary License**.
 
 ---
 
