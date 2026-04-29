@@ -36,7 +36,7 @@ def load_system_instruction():
 
 # Initialize Gemini
 model = genai.GenerativeModel(
-    model_name='gemini-2.0-flash',
+    model_name='gemini-3-flash-preview',
     system_instruction=load_system_instruction()
 )
 chat_session = model.start_chat(history=[])
