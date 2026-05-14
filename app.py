@@ -1,9 +1,9 @@
 # =========================================================================
-# VTM OS - Community Edition (MIT License)
-# Copyright (C) 2025 Tishin Padilla. VTM OS All Rights Reserved.
-# Core IP: VTM Personality Core & VTM-BioLink Protocol Client
+# VTM OS™ - Community Edition (CC BY-NC-SA 4.0)
+# Copyright © 2026 VideotronicMaker™. All Rights Reserved.
+# Core Architecture: VTM Personality Core™ & VTM-BioLink Protocol™
+# No commercial use, distribution, or profit-making permitted.
 # =========================================================================
-
 import os
 import time
 import random
